@@ -44,7 +44,7 @@ def validate_synthetic_resource(resource: object) -> ResourceSummary:
     if not isinstance(resource, dict):
         raise FHIRValidationError("Resource must be an object")
     kind = resource.get("resourceType")
-    if kind not in SUPPORTED:
+    if not isinstance(kind, str) or kind not in SUPPORTED:
         raise FHIRValidationError("Unsupported resource type")
     unexpected = set(resource) - ALLOWED_FIELDS[kind]
     if unexpected:
@@ -65,7 +65,7 @@ def validate_synthetic_resource(resource: object) -> ResourceSummary:
         if type(resource.get("active")) is not bool:
             raise FHIRValidationError("Patient.active must be boolean")
     else:
-        if resource.get("status") not in STATUS[kind]:
+        if not isinstance(resource.get("status"), str) or resource["status"] not in STATUS[kind]:
             raise FHIRValidationError("Invalid resource status")
         _reference(resource.get("subject"))
         if kind == "Observation":
