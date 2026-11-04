@@ -1,0 +1,31 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "synthetic-p1",
+        "meta": {
+          "tag": [
+            {"system": "https://hospitalos-tect.example/tags", "code": "synthetic"}
+          ]
+        },
+        "active": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "synthetic-e1",
+        "meta": {
+          "tag": [
+            {"system": "https://hospitalos-tect.example/tags", "code": "synthetic"}
+          ]
+        },
+        "status": "finished",
+        "subject": {"reference": "Patient/synthetic-p1"}
+      }
+    }
+  ]
+}
