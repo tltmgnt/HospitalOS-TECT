@@ -1,0 +1,5 @@
+{
+  "claim": {"id": "capacity-1", "text": "Synthetic bed capacity report is complete", "evidence_ids": ["synthetic-report"]},
+  "evidence": [{"id": "synthetic-report", "source": "generated-demo", "supports": true, "verified": true}],
+  "rules": [{"id": "requires-review", "description": "Human review required", "passed": true}]
+}
