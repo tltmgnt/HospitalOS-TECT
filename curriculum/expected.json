@@ -1,0 +1,62 @@
+{
+  "case_count": 7,
+  "cases": [
+    {
+      "actual": "review_required",
+      "case": "complete declarations still need review",
+      "expected": "review_required",
+      "passed": true
+    },
+    {
+      "actual": [
+        "missing_evidence:e"
+      ],
+      "case": "missing evidence blocks",
+      "expected": [
+        "missing_evidence:e"
+      ],
+      "passed": true
+    },
+    {
+      "actual": "blocked",
+      "case": "unverified evidence blocks",
+      "expected": "blocked",
+      "passed": true
+    },
+    {
+      "actual": [
+        "contradictory_evidence:e"
+      ],
+      "case": "contradiction blocks",
+      "expected": [
+        "contradictory_evidence:e"
+      ],
+      "passed": true
+    },
+    {
+      "actual": [
+        "failed_rule:r"
+      ],
+      "case": "failed rule blocks",
+      "expected": [
+        "failed_rule:r"
+      ],
+      "passed": true
+    },
+    {
+      "actual": "0e8399f0b39eed1099dfd7602e0d166e49b93fc931ec7ff18004280460f392ea",
+      "case": "digest excludes changing assessment timestamp",
+      "expected": "0e8399f0b39eed1099dfd7602e0d166e49b93fc931ec7ff18004280460f392ea",
+      "passed": true
+    },
+    {
+      "actual": "ValueError",
+      "case": "duplicate evidence ID",
+      "expected": "ValueError",
+      "passed": true
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Synthetic curriculum checks only",
+  "status": "PASS"
+}
