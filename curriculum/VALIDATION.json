@@ -1,0 +1,19 @@
+{
+  "case_count": 7,
+  "command": "python curriculum/lab.py --verify",
+  "exit_code": 0,
+  "expected_sha256": "6a53a8a6f76ca5f0fe5dfa91b511c3f6e20daccd098f36f407dd2f928614afc4",
+  "lab_sha256": "d561bfdccefa6b6ed7214b4b6da7cf653f30c97417af063ca1eb32132c5eef47",
+  "python": "3.12.14",
+  "repository": "tltmgnt/HospitalOS-TECT",
+  "schema_version": 1,
+  "scope": "Local synthetic curriculum validation on the recorded source snapshot; not complete repository CI, learning outcomes, independent scientific reproduction or deployment approval",
+  "source_and_fixture_sha256": {
+    "examples/assessment.json": "d69e728047c4efd06ba2d196ce15a1b8207bb660a3f6bd3c8137deef976d3978",
+    "src/hospitalos_tect/__init__.py": "8711f0f4c4b76d4a8f05c2630d5c9816baa7258e7fb027cfab392e2855a7116b",
+    "src/hospitalos_tect/api.py": "27fb10aaaff4967de9c0de9610b0034b291a04127bf43a4b39ed42ee9576a542",
+    "src/hospitalos_tect/assurance.py": "0265ed5d8bea06f8a071f9897ce2152f2d7e4ab6df8e643fc93206408569b0e4"
+  },
+  "source_base_commit": "cba68c3f4848a89bf7ee33ab01d521782be5c685",
+  "wrong_expectation_exit_code": 1
+}
