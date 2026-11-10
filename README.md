@@ -1,4 +1,13 @@
 # HospitalOS-TECT
+
+<!-- research-workbench:start -->
+## Research workbench
+
+[Open this repository's private workbench](https://tltmgnt-hospitalos-tect.troturn31.chatgpt.site) · [All repository workbenches](https://tltmgnt-research-workbenches.troturn31.chatgpt.site)
+
+The hosted interface requires ChatGPT sign-in and access to the private Site. It supports browser-local research records, evidence fingerprints and workspace export. It is a prototype: no live AI model or repository backend is connected, and it does not establish external validation.
+<!-- research-workbench:end -->
+
 Research-only assurance prototype with `hospitalos_tect.assurance`, a small API and scoped tests. Hospital-wide intelligence, clinical decision support, digital twins and operational deployment are research goals, not validated capabilities. This software does not diagnose, prescribe, certify patient safety or authorize clinical use.
 
 ## ResearchOS / TECT concept integration
